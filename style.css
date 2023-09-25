@@ -1,6 +1,8 @@
 *{
+    border: 0;
+    padding: 0%;
     margin:0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     scroll-behavior: smooth;
     scroll-margin-top: 6rem;
 }
@@ -37,6 +39,10 @@ header a:hover{
     margin-top: 6rem;
 }
 
+h1{
+    margin: 4rem;
+    color: #FFFFFF;
+}
 
 h2{
     color:#C50404
@@ -54,3 +60,16 @@ section{
 img {
   display: inline-block;
 }
+
+table, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: center;
+  }
+  
+  th {
+    background-color: #89CF4B;
+  }

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revisão de html e css</title>
+    <title>Trabalho de websites</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <h1>ITÁLIA E </h1>
         <nav>
             <a href="#historia">História</a>
             <a href="#economia">Economia</a>
@@ -15,9 +16,11 @@
             <a href="#geografia">Geografia</a>
             <a href="#cultura">Cultura</a>
             <a href="#turismo">Turismo</a>
+            <a href="#formulario">Formulário</a>
         </nav>
     </header>
     <main>
+        <h1>Itália</h1>
         <section id="historia">
             <h2>História</h2>
             <div>
@@ -69,8 +72,45 @@
                      A Itália ocupa a 30ª posição na lista dos países mais ricos do mundo.
                      Sua taxa de inflação no ano de 2022 foi de 8,2% aproximadamente.</p>
             <h3>Setores principais</h3>
-            <p>Um dos seus Principais setores econômicos: indústria, turismo, finanças e agricultura. E a força de trabalho “em 2022”.</p>
-            <img src="https://camaraitaliana.com.br/wp-content/uploads/2021/01/Skjermbilde-2021-01-27-kl.-12.48.30.png" alt="PIB">
+            <p>Um dos seus Principais setores econômicos: indústria, turismo, finanças e agricultura.
+            E a força de trabalho “em 2022”. Abaixo há a taxa de variação do PIB de seus componentes:</p>
+            <table style="width: 100%">
+                <tr>
+                <th></th>
+                  <th>2017</th>
+                  <th>2018</th>
+                  <th>2019</th>
+                  <th>2020</th>
+                </tr>
+                <tr>
+                  <td><strong>PIB</strong></td>
+                  <td>1,7</td>
+                  <td>0,9</td>
+                  <td>0,3</td>
+                  <td>-8,9</td>
+                </tr>
+                <tr>
+                <td><strong>Indústria</strong></td>
+                <td>0,4</td>
+                <td>0,5</td>
+                <td>1,1</td>
+                <td>-11,7</td>
+                </tr>
+                <tr>
+                  <td><strong>Serviços</strong></td>
+                  <td>0,4</td>
+                  <td>0,3</td>
+                  <td>0,3</td>
+                  <td>-8,5</td>
+                </tr>
+                <tr>
+                  <td><strong>Agricultura</strong></td>
+                  <td>2,3</td>
+                  <td>-1,4</td>
+                  <td>-1,5</td>
+                  <td>-4,2</td>
+                </tr> 
+                </table>
            </div>
         </section>
         <section id="governo">
@@ -127,16 +167,50 @@
         <section id="turismo">
             <h2>Turismo</h2>
             <div>
-                <p>Se você quer visitar a Itália, esses são os melhores pontos turísticos: Coliseu
-                de Roma; Catedral de Milão e Torre de Pisa. é possível se deparar com vestígios de uma
-                cultura milenar, muito bem preservada, misturada às belezas, cores e encantos de uma cidade
-                que não é só glamourosa, mas também fascinante e dona de um rico patrimônio
-                artístico e cultural que envolve todos os turistas.</p>
+                <p>É possível se deparar com vestígios de uma cultura milenar, muito bem preservada,
+                 misturada às belezas, cores e encantos de uma cidade que não é só glamourosa, mas
+                 também fascinante e dona de um rico patrimônio artístico e cultural que envolve
+                 todos os turistas. Se você quer visitar a Itália, esses são os melhores pontos turísticos: </p>
+                <ul>
+                    <li>Coliseu de Roma</li>
+                    <li>Catedral de Milão</li>
+                    <li>Torre de pisa</li>
+                </ul>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSDEL1oHYueG9E1OsPpMUP_NBzIitC7LpYUtPA6glrRUxMIZf1" alt="coliseu">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMFUqCT1qhnrfp_xtEv4tROK0LtiCZVSCuR_q7TMzdY1KFHg2L" alt="catedral">
             <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVmQRCI1hcOuTPJ2-KCHMHNMULK8FZKzgVGRcj9VVEQEA3i_Fb" alt="torre">
-
             </div>
+        </section>
+        <section id="formulario">
+            <h2>Formulário</h2>
+            <div>
+                <form action="">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div>
+                        <p>Gostou do site?</p>
+                        <div>
+                            <input type="radio" id="sim" name="interesse">
+                            <label for="sim">SIM!</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="nao" name="interesse">
+                            <label for="nao">NÃO</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="nota">Que nota você daria? </label>
+                        <select name="nota" id="nota">
+                            <option disabled selected>Selecione...</option>
+                            <option value="01ta">01 á 05</option>
+                            <option value="01tb">05 á 10</option>
+                        </select>
+                        </div>
+                        <button>Enviar</button>
+                    </form>
+                </div>
         </section>
     </main>
 </body>
